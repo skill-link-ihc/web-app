@@ -1,0 +1,33 @@
+.header-menu-icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    width: auto;
+    height: 60px;
+    display: block;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    background-color: #fff;
+    height: 70px;
+}
+
+.header-nav ul li {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    list-style: none;
+    font-size: 16px;
+}
+
