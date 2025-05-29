@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/main.css">
@@ -25,31 +27,184 @@
             </div>
             <nav class="header-nav">
                 <ul>
-                    <li>
-                        <a href="/src/pages/experts.html">Expertos</a>
-                    </li>
-                    <li>
-                        <a href="/src/pages/about.html">Sobre nosotros</a>
-                    </li>
-                    <li>
-                        <a href="/src/pages/support.html">Soporte Tecnico</a>
-                    </li>
+                    <li><a href="/src/pages/experts.html">Expertos</a></li>
+                    <li><a href="/src/pages/about.html">Sobre Nosotros</a></li>
+                    <li><a href="/src/pages/support.html">Soporte Técnico</a></li>
                 </ul>
             </nav>
             <div class="header-login-register">
-                <a href="/src/pages/login.html">Iniciar sesión</a>
-                <a href="/src/pages/register.html">Unirse</a>
+                <button class="login-button" id="open-login-modal">Iniciar sesión</button>
+                <button class="register-button" id="open-register-modal">Registrarse</button>
             </div>
         </section>
     </header>
 
 
     <main>
-        <p>main page content</p>
+        <section class="main-container">
+            <div class="main-container-content">
+                <div class="image-container">
+                    <img src="/public/assets/advisor-main-container.jpg" class="image-container-image" alt="Advisor Image">
+                </div>
+                <div class="content-container">
+                    <div class="card-content">
+                        <div class="card-content-title">
+                            <h1>Conecta con asesores expertos para potenciar tu aprendizaje</h1>
+                            <h2>Recibe orientación personalizada de profesionales que te ayudarán a resolver tus dudas, mejorar tus habilidades y alcanzar tus objetivos más rápido.</h2>
+                        </div>
+                        <div class="card-content-description">
+                            <span>• Flexibilidad horaria</span>
+                            <span>• Agenda asesorías según tu tiempo.</span>
+                            <span>• Asesorías personalizadas</span>
+                            <span>• Plataforma segura</span>
+                            <span>• Encuentra expertos que se adapten a ti.</span>
+                            <span>• Tu información y pagos están protegidos.</span>
+                        </div>
+                        <div class="card-content-button">
+                            <button class="card-content-button-action">Encuentra tu asesor</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recommended-experts">
+            <div class="recommended-experts-container">
+                <h2>Expertos Recomendados</h2>
+                <div class="recommended-experts-container-cards">
+                    <div class="expert-card-container">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="/public/assets/expert1.jpeg" alt="Expert 1">
+                            </div>
+                            <div class="card-expert-info">
+                                <span class="card-expert-info-name">Francisco García</span>
+                                <span class="card-expert-info-profession">Asesor de Marketing</span>
+                                <span class="card-expert-info-quote">“El mejor asesor de marketing que he tenido”</span>
+                                <div class="star-container">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                    <img src="/public/assets/star-half.svg" alt="Stars" class="card-expert-info-stars">
+                                </div>
+                            </div>
+                            <div class="card-expert-button">
+                                <button class="card-expert-button-action">Ver perfil</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="/public/assets/expert2.jpeg" alt="Expert 1">
+                            </div>
+                            <div class="card-expert-info">
+                                <span class="card-expert-info-name">Richard Muller</span>
+                                <span class="card-expert-info-profession">Economista Ejecutivo</span>
+                                <span class="card-expert-info-quote">“Excelente persona y economista, me inspiró confianza”</span>
+                                <div class="star-container">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                </div>
+                            </div>
+                            <div class="card-expert-button">
+                                <button class="card-expert-button-action">Ver perfil</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="/public/assets/expert3.jpeg" alt="Expert 1">
+                            </div>
+                            <div class="card-expert-info">
+                                <span class="card-expert-info-name">Rafael Cordova</span>
+                                <span class="card-expert-info-profession">Derecho Civil</span>
+                                <span class="card-expert-info-quote">“Buen profesional, me ayudó resolver un problema legal”</span>
+                                <div class="star-container">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                </div>
+                            </div>
+                            <div class="card-expert-button">
+                                <button class="card-expert-button-action">Ver perfil</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="/public/assets/expert4.jpeg" alt="Expert 1">
+                            </div>
+                            <div class="card-expert-info">
+                                <span class="card-expert-info-name">Sarah Diaz</span>
+                                <span class="card-expert-info-profession">Psicóloga Clínica</span>
+                                <span class="card-expert-info-quote">“Me ayudó mucho a superar muchos problemas”</span>
+                                <div class="star-container">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                    <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                                    <img src="/public/assets/star-half.svg" alt="Stars" class="card-expert-info-stars">
+                                </div>
+                            </div>
+                            <div class="card-expert-button">
+                                <button class="card-expert-button-action">Ver perfil</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="categories-container">
+                <h2>¿Qué tipo de asesorías necesitas?</h2>
+                <div class="categories-container-cards">
+
+                    <div class="category-card">
+                        <div class="category-card-title">
+                            <h3>Académicas</h3>
+                        </div>
+                        <div class="category-card-description">
+                            <p>Refuerza cursos universitarios con asesorías personalizadas que te ayudarán a entender mejor los temas y a resolver tus dudas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-card-title">
+                            <h3>Profesionales</h3>
+                        </div>
+                        <div class="category-card-description">
+                            <p>Capacitación en habilidades para tu crecimiento laboral y profesional para que puedas mejorar tu trabajo y tu carrera profesional.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-card-title">
+                            <h3>Técnica</h3>
+                        </div>
+                        <div class="category-card-description">
+                            <p>Asesoría en programación, diseño, software u otras áreas técnicas de tu interés para que puedas mejorar tus habilidades y tus proyectos.</p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <section class="why-us"></section>
+        
+        <section class="testimonials"></section>
+
+        <section class="mission"></section>
+
+        <section class="up-to-your-needs"></section>
+
+        <section class="contact-us"></section>
     </main>
 
     <footer>
-        <p>footer content</p>
     </footer>
 </body>
 </html>
