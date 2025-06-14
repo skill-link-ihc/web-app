@@ -129,7 +129,6 @@
     width: 85%;
     font-size: 3rem;
     font-weight: 600;
-    margin: 26px 0;
     color: #ffffff;
 }
 
@@ -289,7 +288,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #14253d;
+    background-color: #ffffff;
     width: 100%;
 
 }
@@ -297,7 +296,8 @@
 .categories-container h2 {
     font-size: 2.4rem;
     font-weight: 600;
-    color: #ffffff;
+    color: #000000;
+    margin: 50px 0;
 }
 
 .categories-container-cards {
@@ -308,10 +308,12 @@
 }
 
 .category-card {
-    max-width: 230px;
+    max-width: 250px;
+    min-height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     background-color: #1a304e;
     color: #ffffff;
     border-radius: 10px;
@@ -330,5 +332,57 @@
     font-size: 1.2rem;
 }
 
+.why-use-skill-link-container {
+    display: flex;
+    width: 100%;
+    background-color: #F5F5F5;
+}
 
+.why-use-skill-link-container-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
 
+.why-use-skill-link-container-title h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.why-use-skill-link-container-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: #ffffff;
+    background-color: #457B9D;
+}
+
+.detailed-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 100px 0;
+}   
+
+.testimonials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.testimonials-card-container {
+    display: flex;
+}
+
+.card-expert-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
