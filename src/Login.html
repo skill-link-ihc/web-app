@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>SkillLink Login</title>
+    <link rel="stylesheet" href="css/Login-Register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="login-left">
+                <h2>Qué bueno verte otra vez</h2>
+                <div class="icons">
+                    <a href="#"><ion-icon name="logo-facebook" class="icon"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google" class="icon"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter" class="icon"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin" class="icon"></ion-icon></a>
+                </div>
+                <form>
+                    <label for="usuario">Usuario</label>
+                    <input class="input" type="text" id="usuario" placeholder="Ingresa tu Usuario" required>
+                    <label for="contrasena"> Contraseña</label>
+                    <input class="input" type="password" id="contrasena" placeholder="Ingresa tu Contraseña" required>
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    <button type="submit" class="btn-login">Iniciar Sesión</button>
+                </form>
+            </div>
+            <div class="login-right">
+                <h2>SkillLink</h2>
+                <p>"Transforma tu potencial y alcanza tus metas con nuestro servicio de asesoría personalizada. Vive la mejor experiencia de aprendizaje en línea, diseñada a tu medida para garantizar resultados excepcionales."</p>
+                <p>¿Todavía no tienes una cuenta?</p>
+                <button onclick="registrar()" class="btn-registrar">Regístrate</button>
+            </div>
+        </div>
+
+        <script src="js/index.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </div>
+</body>
+</html>

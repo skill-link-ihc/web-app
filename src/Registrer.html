@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Skill Link</title>
+    <link rel="stylesheet" href="/src/css/Login-Register.css">
+</head>
+<body>
+    <div class="container-register">
+        <div class="register-box">
+            <div class="register-left">
+                <h2>Bienvenido por Primera vez</h2>
+                <form class= "form-register">
+                    <label for="usuario">Usuario</label>
+                    <input class="input-register" type="text" id="usuario" placeholder="Ingresa tu Usuario" required>
+                    <label for="Correo">Correo Electronico</label>
+                    <input class="input-register" type = "email" id = "Correo" placeholder="Ingresa tu Correo Electronico" required>
+                    <label for="contrasena"> Contraseña</label>
+                    <input class="input-register" type="password" id="contrasena" placeholder="Ingresa tu Contraseña" required>
+                    <label for="ConfirmarContraseña">Confirmar Contraseña</label>
+                    <input class="input-register" type ="password" id = "ConfirmarContraseña" placeholder="Confirma tu Contraseña" required>
+                    <button type="submit" class="btn-registro">Registrarse</button>
+                </form>
+            </div>
+            <div class="register-right">
+                <h2>SkillLink</h2>
+                <p>"Transforma tu potencial y alcanza tus metas con nuestro servicio de asesoría personalizada. Vive la mejor experiencia de aprendizaje en línea, diseñada a tu medida para garantizar resultados excepcionales."</p>
+                <p class="I-F">¿Ya tienes una cuenta con SkillLink?</p>
+                <button onclick="Login()" class="btn-login">Iniciar Sesion</button>
+            </div>
+        </div>
+
+        <script src="/src/js/index.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </div>
+</body>
+</html>

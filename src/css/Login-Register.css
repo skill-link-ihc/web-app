@@ -1,0 +1,320 @@
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+.icons {
+    text-align: center;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.login-left h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(240, 239, 239);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.icons a{
+    text-decoration: none;
+    color: rgb(240, 239, 239);
+    font-size: 25px;
+    
+}
+
+
+.login-box{
+    
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 8px 32px  rgba(60,60,100,0.10);
+}
+
+.login-left {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-left h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.login-left form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    border-radius: 10px;
+}
+
+
+
+form a{
+    text-decoration: none;
+    color: rgb(240, 239, 239);
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: lighter;
+}
+
+form label{
+    font-size: 16px;
+    color: rgb(238, 236, 236);
+    text-align: left;
+    margin-bottom: 4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+form .input{
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #222;
+    background: #dbeafe;
+    margin-bottom: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+form .btn-login {
+    display: inline-block;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #2563eb;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 10px;
+    max-width: max-content;
+    align-items: center;
+    justify-content: center;
+    margin-left: 26%;
+}
+
+
+.login-right {
+    background-color: rgb(217, 217, 219);
+    color: white;
+    border: none;
+    padding: 15px 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-right h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(12, 10, 10);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.login-right{
+    background-color: #dbeafe;
+}
+
+.login-right p{
+    text-align: center;
+    font-size: 16px;
+    color: rgb(10, 9, 9);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn-registrar{
+    display: inline-block;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #2563eb;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 33%
+}
+
+
+
+/*Lado del registro*/
+
+
+.container-register{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-box{
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 8px 32px  rgba(60,60,100,0.10);
+}
+
+.register-left{
+   background-color: rgb(243, 217, 69);
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   padding: 10px 24px;
+}
+
+
+.register-left h2{
+    font-size: 30px
+}
+
+.form-register{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.register-right{
+    background-color: rgb(240, 239, 239);
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.register-right h2{
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.register-right p{
+    text-align: center;
+    font-size: 16px;
+    color: rgb(10, 9, 9);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.register-right .I-F{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.btn-login{
+    display: inline-block;
+    color: rgb(243, 217, 69);
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-left {
+    background-color: #f3d945;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    width: 90%;
+    
+}
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 10px;
+    align-items: flex-start; 
+}
+
+.form-register a{
+    text-decoration: none;
+    color: rgb(240, 239, 239);
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: lighter;
+}
+
+.form-register label{
+    font-size: 16px;
+    color: rgb(238, 236, 236);
+    text-align: left;
+    margin-bottom: 4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.form-register .input-register{
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #222;
+    background: #ffffff;
+    margin-bottom: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.form-register .btn-registro {
+    display: inline-block;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: rgb(243, 217, 69);
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 10px;
+    max-width: max-content;
+    align-items: center;
+    justify-content: center;
+    margin-left: 26%;
+}
