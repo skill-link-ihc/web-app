@@ -11,12 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 });
 
-
-
-
-
-
-
 function Login(){
     window.location.href = "/src/Login.html"
 }

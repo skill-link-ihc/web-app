@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     
 
     <link rel="stylesheet" href="src/css/style.css">
@@ -28,9 +31,9 @@
             </div>
             <nav class="header-nav">
                 <ul>
-                    <li><a href="/src/pages/experts.html">Expertos</a></li>
-                    <li><a href="/src/pages/about.html">Sobre Nosotros</a></li>
-                    <li><a href="/src/pages/support.html">Soporte Técnico</a></li>
+                    <li><a href="/src/experts.html">Expertos</a></li>
+                    <li><a href="/src/about.html">Sobre Nosotros</a></li>
+                    <li><a href="/src/support.html">Soporte Técnico</a></li>
                 </ul>
             </nav>
             <div class="header-login-register">
@@ -213,13 +216,33 @@
         
         <section class="testimonials">
             <div class="testimonials-container">
-                <span>Experiencia de nuestros usuarios</span>
+                <h2>Experiencia de usuario</h2>
 
                 <div class="testimonials-card-container">
 
 
                 <div class="card">
                     <div class="card-expert-info">
+                        <img src="/public/assets/Expert5.jpeg" alt="">
+                        <span class="card-expert-info-name">Gabriela Landa</span>
+                        <span class="card-expert-info-profession">Administradora</span>
+                        <span class="card-expert-info-quote">“Me ayudo a aprender nuevas habilidades”</span>
+                        <div class="star-container">
+                            <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                            <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                            <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                            <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                            <img src="/public/assets/star-half.svg" alt="Stars" class="card-expert-info-stars">
+                        </div>
+                    </div>
+                    <div class="card-expert-button">
+                        <button class="card-expert-button-action">Ver perfil</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-expert-info">
+                        <img src="/public/assets/expert4.jpeg" alt="">
                         <span class="card-expert-info-name">Sarah Diaz</span>
                         <span class="card-expert-info-profession">Psicóloga Clínica</span>
                         <span class="card-expert-info-quote">“Me ayudó mucho a superar muchos problemas”</span>
@@ -238,9 +261,10 @@
 
                 <div class="card">
                     <div class="card-expert-info">
-                        <span class="card-expert-info-name">Sarah Diaz</span>
-                        <span class="card-expert-info-profession">Psicóloga Clínica</span>
-                        <span class="card-expert-info-quote">“Me ayudó mucho a superar muchos problemas”</span>
+                        <img src="/public/assets/Usuario2.jpeg" alt="">
+                        <span class="card-expert-info-name">Daniel Alzamora</span>
+                        <span class="card-expert-info-profession">Estudiante de Administración</span>
+                        <span class="card-expert-info-quote">“Me ayudó mucho a superar problemas”</span>
                         <div class="star-container">
                             <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
                             <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
@@ -254,18 +278,53 @@
                     </div>
                 </div>
 
+                <div class="card">
+                    <div class="card-expert-info">
+                        <img src="/public/assets/Usuario1.jpeg" alt="">
+                        <span class="card-expert-info-name">Luiz Diaz</span>
+                        <span class="card-expert-info-profession">Estudiante de Ingenieria Civil</span>
+                        <span class="card-expert-info-quote">“Me ayudo a prepararme mejor academicamente”</span>
+                        <div class="star-container">
+                            <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                            <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                            <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                            <img src="/public/assets/star.svg" alt="Stars" class="card-expert-info-stars">
+                            <img src="/public/assets/star-half.svg" alt="Stars" class="card-expert-info-stars">
+                        </div>
+                    </div>
+                    <div class="card-expert-button">
+                        <button class="card-expert-button-action">Ver perfil</button>
+                    </div>
                 </div>
+
+                
             </div>
         </section>
 
-        <section class="mission"></section>
-
-        <section class="up-to-your-needs"></section>
-
-        <section class="contact-us"></section>
     </main>
 
-    <footer>
+    <footer class="footer-skilllink">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/public/assets/skill-link-logo.png" alt="SkillLink Logo" height="100px" width="100px" />
+                
+            </div>
+            <nav class="footer-nav">
+                <a href="/index.html">Inicio</a>
+                <a href="/src/experts.html">Expertos</a>
+                <a href="/src/about.html">Sobre Nosotros</a>
+                <a href="/src/support.html">Soporte Técnico</a>
+            </nav>
+            <div class="icons">
+                    <a href="#"><ion-icon name="logo-facebook" class="icon"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google" class="icon"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter" class="icon"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin" class="icon"></ion-icon></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 SkillLink. Todos los derechos reservados.
+        </div>
     </footer>
     <script src="src/js/index.js"></script>
 </body>
