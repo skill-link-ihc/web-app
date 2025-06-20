@@ -273,3 +273,48 @@ html, body {
     font-size: 2.4rem;
     text-align: center;
 }
+
+.recommended-experts-container {
+  margin: 40px auto;
+  padding: 0 20px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.recommended-experts-container-cards {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.recommended-experts-container-cards::-webkit-scrollbar {
+  height: 8px;
+}
+
+.recommended-experts-container-cards::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.expert-card-container {
+  flex: 0 0 auto;
+  width: 220px; /* Puedes ajustar el tamaño aquí */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 12px;
+  transition: transform 0.3s ease;
+}
+
+
+.expert-card-container img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
