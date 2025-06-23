@@ -96,7 +96,7 @@
     display: flex;
     height: 100%;
     width: 100%;
-    background-color: #457B9D;
+  background: linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .image-container {
@@ -137,6 +137,7 @@
     font-size: 1.3rem;
     font-weight: 500;
     margin: 0;
+    color: #ffffff;
 }
 
 .card-content-description {
@@ -158,22 +159,22 @@
 }
 
 .card-content-button button {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sanss-serif;
     width: 80%;
-    background-color: #1D3557;
+    background-color: #2d4b77;
     color: #ffffff;
     border: none;
     border-radius: 10px;
     padding: 16px 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.2s ease;
-    box-shadow: 0 4px 16px rgba(44, 62, 80, .5);
+    box-shadow: 0 4px 16px #000;
 }
 
 .card-content-button button:hover {
-    background-color: #0f1b2c;
+    background-color: #22385a;
 }
 
 /* Section: Recommended Experts */
@@ -289,7 +290,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
+  background: linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 100%;
 
 }
@@ -297,20 +298,22 @@
 .categories-container h2 {
     font-size: 2.4rem;
     font-weight: 600;
-    color: #000000;
+    color: #ffffff;
     margin: 50px 0;
 }
 
 .categories-container-cards {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    justify-items: center;
     width: 100%;
     margin-bottom: 6rem;
 }
 
 .category-card {
-    max-width: 250px;
-    min-height: 250px;
+    max-width: 350px;
+    min-height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -318,14 +321,26 @@
     background-color: #1a304e;
     color: #ffffff;
     border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 0;
+    box-shadow: 0 16px 64px 0 #1a304e99;
+    transition: transform 0.2s, box-shadow 0.4s;
+}
+
+.category-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 24px 80px 0 rgb(20, 24, 29);
 }
 
 .category-card-description {
+    padding: 20px;
     font-size: 1rem;
     font-weight: 400;
     text-align: justify;
+}
+
+.category-card-description p {
+    margin: 0;
 }
 
 
@@ -333,10 +348,14 @@
     font-size: 1.2rem;
 }
 
+.category-card-title h3 {
+    margin-bottom: 0;
+}
+
 .why-use-skill-link-container {
     display: flex;
     width: 100%;
-    background-color: #F5F5F5;
+    background-color: #ffffff;
 }
 
 .why-use-skill-link-container-title {
@@ -358,28 +377,35 @@
     align-items: center;
     width: 50%;
     color: #ffffff;
-    background-color: #457B9D;
+    background-color: #122136;
     margin-left: 50px;
 }
 
 .detailed-row {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
     font-size: 1.4rem;
     font-weight: 500;
     margin: 100px;
 }   
 
 .testimonials-container {
+    background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 5rem 0 ;
 }
 
 .testimonials-card-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    width: 100%;
 }
 
 .card-expert-info {
@@ -392,14 +418,15 @@
 .testimonials-container h2{
     font-size:  2.4rem;
     font-weight: bold;
-    margin-top: 4rem;
+    margin: 0;
+    margin-bottom: 2rem;
 }
 
 
 .footer-skilllink {
-    background: #1D3557;
+    background: #122136;
     color: #fff;
-    padding: 32px 0 16px 0;
+    padding: 4rem 0rem;
     font-size: 1rem;
 }
 
@@ -410,7 +437,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0 24px;
+    padding: 0px;
     gap: 24px;
 }
 
@@ -467,9 +494,9 @@
 
 .footer-bottom {
     text-align: center;
-    margin-top: 24px;
+    margin-top: 6rem;
     font-size: 1rem;
-    color: #a8dadc;
+    color: #ffffff;
 }
 
 .icons {
@@ -486,4 +513,11 @@
     color: rgb(240, 239, 239);
     font-size: 25px;
     
+}
+
+.category-head-image {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:inherit;
 }
