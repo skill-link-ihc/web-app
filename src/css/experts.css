@@ -89,3 +89,128 @@
     transform: scale(0.97);
     box-shadow: 0 2px 6px rgba(44, 62, 80, 0.10);
 }
+
+/* General styles for the experts page */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.experts-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experts-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.experts-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.experts-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Grid layout for expert cards */
+.experts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem;
+    justify-content: center;
+}
+
+.expert-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.card-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.card-info .quote {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+/* Star container styles */
+.star-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.star-container img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Button styles */
+.card-button {
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-button button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-button button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .experts-header h1 {
+        font-size: 2rem;
+    }
+
+    .experts-header p {
+        font-size: 1rem;
+    }
+}
