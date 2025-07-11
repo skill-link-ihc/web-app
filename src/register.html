@@ -6,22 +6,23 @@
     <title>SkillLink | Register</title>
     <link rel="stylesheet" href="../src/css/Login-Register.css">
     <script type="module" src="../src/js/index.js"></script>
+    <script type="module" src="../src/js/Register.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <div class="container-register">
         <div class="register-box">
             <div class="register-left">
                 <h2>Bienvenido por Primera vez</h2>
-                <form class= "form-register">
+                <form class= "form-register" id = "form-register">
                     <label for="usuario">Usuario</label>
                     <input class="input-register" type="text" id="usuario" placeholder="Ingresa tu Usuario" required>
                     <label for="Correo">Correo Electronico</label>
                     <input class="input-register" type = "email" id = "Correo" placeholder="Ingresa tu Correo Electronico" required>
                     <label for="contrasena"> Contraseña</label>
                     <input class="input-register" type="password" id="contrasena" placeholder="Ingresa tu Contraseña" required>
-                    <label for="ConfirmarContraseña">Confirmar Contraseña</label>
+                    <label for="ConfirmarContrasena">Confirmar Contraseña</label>
                     <input class="input-register" type ="password" id = "ConfirmarContraseña" placeholder="Confirma tu Contraseña" required>
                     <button type="submit" class="btn-registro">Registrarse</button>
                 </form>

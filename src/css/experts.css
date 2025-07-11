@@ -239,6 +239,7 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
+    
     .experts-grid {
         grid-template-columns: repeat(2, 1fr); /* dos columnas */
     }
