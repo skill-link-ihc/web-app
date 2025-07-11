@@ -178,7 +178,7 @@ function procesarRespuesta(texto){
 
 
 function generarRespuestaSimulada(mensaje){
-    if(mensaje.includes('hola') || mensaje.includes ('buenas')){
+    if(mensaje.includes('hola') || mensaje.includes ('buenas') || mensaje.includes('buen dia') || mensaje.includes('buenas tardes') || mensaje.includes('buenas noches') || mensaje.includes('Hola') || mensaje.includes('HOLA') ){
         return '¡Hola! Estoy aquí para ayudarte en lo que me pidas.';
     } else if(mensaje.includes('reservo') || mensaje.includes('agendo')){
         return 'para reservar una asesoria, primero tienes que elegir una que te llame la atencion, luego escoge los temas que quieras abarcar. Despues elige al asesor de tus preferencias, pudes usar filtros para tener asesores según tus necesidaes economias, experiencia, etc. Luego de eso, entra al perfil del asesor y elige la fecha y hora que mejor te acomode, por ultimo paga la reserva y listo eso seria todo';
