@@ -47,9 +47,16 @@
                 <h1>Nuestros Expertos</h1>
                 <p>Explora nuestra red de expertos en diversas áreas y encuentra el asesor ideal para tus necesidades.</p>
             </div>
+            <!-- Filtros de categoría -->
+            <div class="experts-filters">
+                <button data-cat="all" class="active">Todos</button>
+                <button data-cat="profesionales">Profesionales</button>
+                <button data-cat="tecnicas">Técnicas</button>
+                <button data-cat="academicas">Académicas</button>
+            </div>
+            <!-- Grid de tarjetas con clase de categoría -->
             <div class="experts-grid">
-                
-                <div class="expert-card">
+                <div class="expert-card profesionales">
                     <div class="card-image">
                         <img src="../public/assets/expert1.jpeg" alt="Francisco García">
                     </div>
@@ -70,7 +77,7 @@
                     </div>
                 </div>
                 
-                <div class="expert-card">
+                <div class="expert-card profesionales">
                     <div class="card-image">
                         <img src="../public/assets/expert2.jpeg" alt="Richard Muller">
                     </div>
@@ -91,7 +98,89 @@
                     </div>
                 </div>
                 
-                <div class="expert-card">
+                <div class="expert-card profesionales">
+                    <div class="card-image">
+                        <img src="../public/assets/expert5.jpeg" alt="Ana Torres">
+                    </div>
+                    <div class="card-info">
+                        <h3>Ana Torres</h3>
+                        <p>Consultora Financiera</p>
+                        <p class="quote">“Gracias a ella, logré organizar mis finanzas.”</p>
+                        <div class="star-container">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <button>Ver Perfil</button>
+                    </div>
+                </div>
+                <div class="expert-card tecnicas">
+                    <div class="card-image">
+                        <img src="..\public\assets\Brinta-Horan-Riverbend-teacher-400x400.jpg" alt="Laura Fernández">
+                    </div>
+                    <div class="card-info">
+                        <h3>Laura Fernández</h3>
+                        <p>Especialista en Recursos Humanos</p>
+                        <p class="quote">“Ayuda a construir equipos exitosos”</p>
+                        <div class="star-container">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <button>Ver Perfil</button>
+                    </div>
+                </div>
+                <div class="expert-card academicas">
+                    <div class="card-image">
+                        <img src="../public/assets/expert1.jpeg" alt="Francisco García">
+                    </div>
+                    <div class="card-info">
+                        <h3>Francisco García</h3>
+                        <p>Asesor de Marketing</p>
+                        <p class="quote">“El mejor asesor de marketing que he tenido.”</p>
+                        <div class="star-container">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star-half.svg" alt="Half Star">
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <button>Ver Perfil</button>
+                    </div>
+                </div>
+                
+                <div class="expert-card academicas">
+                    <div class="card-image">
+                        <img src="../public/assets/expert2.jpeg" alt="Richard Muller">
+                    </div>
+                    <div class="card-info">
+                        <h3>Richard Muller</h3>
+                        <p>Economista Ejecutivo</p>
+                        <p class="quote">“Excelente persona y economista, me inspiró confianza.”</p>
+                        <div class="star-container">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <button>Ver Perfil</button>
+                    </div>
+                </div>
+                
+                <div class="expert-card academicas">
                     <div class="card-image">
                         <img src="../public/assets/expert3.jpeg" alt="María López">
                     </div>
@@ -112,7 +201,7 @@
                     </div>
                 </div>
                 
-                <div class="expert-card">
+                <div class="expert-card academicas">
                     <div class="card-image">
                         <img src="../public/assets/expert4.jpeg" alt="Carlos Pérez">
                     </div>
@@ -132,42 +221,160 @@
                         <button>Ver Perfil</button>
                     </div>
                 </div>
-                
-                <div class="expert-card">
+                <div class="expert-card profesionales">
                     <div class="card-image">
-                        <img src="../public/assets/expert5.jpeg" alt="Ana Torres">
+                        <img src="../public/assets/expert6.jpg" alt="Mariela Fernández">
                     </div>
                     <div class="card-info">
-                        <h3>Ana Torres</h3>
-                        <p>Consultora Financiera</p>
-                        <p class="quote">“Gracias a ella, logré organizar mis finanzas.”</p>
+                        <h3>Mariela Fernández</h3>
+                        <p>Coach Ejecutivo</p>
+                        <p class="quote">“Impulso tu crecimiento profesional con estrategias personalizadas.”</p>
                         <div class="star-container">
                             <img src="../public/assets/star.svg" alt="Star">
                             <img src="../public/assets/star.svg" alt="Star">
                             <img src="../public/assets/star.svg" alt="Star">
                             <img src="../public/assets/star.svg" alt="Star">
-                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star-half.svg" alt="Half Star">
                         </div>
                     </div>
                     <div class="card-button">
                         <button>Ver Perfil</button>
                     </div>
                 </div>
-                
-                <div class="expert-card">
+                <div class="expert-card profesionales">
                     <div class="card-image">
-                        <img src="..\public\assets\Brinta-Horan-Riverbend-teacher-400x400.jpg" alt="Laura Fernández">
+                        <img src="../public/assets/expert7.jpg" alt="Diego Álvarez">
                     </div>
                     <div class="card-info">
-                        <h3>Laura Fernández</h3>
-                        <p>Especialista en Recursos Humanos</p>
-                        <p class="quote">“Ayuda a construir equipos exitosos”</p>
+                        <h3>Diego Álvarez</h3>
+                        <p>Consultor de Estrategia</p>
+                        <p class="quote">“Desarrollo planes estratégicos para el crecimiento sostenible.”</p>
+                        <div class="star-container">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star-half.svg" alt="Half Star">
+                            <img src="../public/assets/star-half.svg" alt="Half Star">
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <button>Ver Perfil</button>
+                    </div>
+                </div>
+                <div class="expert-card profesionales">
+                    <div class="card-image">
+                        <img src="../public/assets/expert8.jpg" alt="Isabel Vargas">
+                    </div>
+                    <div class="card-info">
+                        <h3>Isabel Vargas</h3>
+                        <p>Mentora de Liderazgo</p>
+                        <p class="quote">“Fomento habilidades de liderazgo y gestión de equipos.”</p>
                         <div class="star-container">
                             <img src="../public/assets/star.svg" alt="Star">
                             <img src="../public/assets/star.svg" alt="Star">
                             <img src="../public/assets/star.svg" alt="Star">
                             <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star-half.svg" alt="Half Star">
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <button>Ver Perfil</button>
+                    </div>
+                </div>
+                <div class="expert-card tecnicas">
+                    <div class="card-image">
+                        <img src="../public/assets/expert9.jpg" alt="Andrea Soto">
+                    </div>
+                    <div class="card-info">
+                        <h3>Andrea Soto</h3>
+                        <p>Desarrolladora Web Full-Stack</p>
+                        <p class="quote">“Construyo aplicaciones eficientes y escalables.”</p>
+                        <div class="star-container">
                             <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star-half.svg" alt="Half Star">
+                            <img src="../public/assets/star-half.svg" alt="Half Star">
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <button>Ver Perfil</button>
+                    </div>
+                </div>
+                <div class="expert-card tecnicas">
+                    <div class="card-image">
+                        <img src="../public/assets/expert10.jpg" alt="Javier Ruiz">
+                    </div>
+                    <div class="card-info">
+                        <h3>Javier Ruiz</h3>
+                        <p>Especialista en Ciberseguridad</p>
+                        <p class="quote">“Protejo tus sistemas frente a amenazas digitales.”</p>
+                        <div class="star-container">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star-half.svg" alt="Half Star">
+                            <img src="../public/assets/star-half.svg" alt="Half Star">
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <button>Ver Perfil</button>
+                    </div>
+                </div>
+                <div class="expert-card tecnicas">
+                    <div class="card-image">
+                        <img src="../public/assets/expert11.jpg" alt="Valentina Gómez">
+                    </div>
+                    <div class="card-info">
+                        <h3>Valentina Gómez</h3>
+                        <p>Diseñadora UX/UI</p>
+                        <p class="quote">“Creo experiencias digitales intuitivas y atractivas.”</p>
+                        <div class="star-container">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star-half.svg" alt="Half Star">
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <button>Ver Perfil</button>
+                    </div>
+                </div>
+                <div class="expert-card academicas">
+                    <div class="card-image">
+                        <img src="../public/assets/expert12.jpg" alt="Sofía Torres">
+                    </div>
+                    <div class="card-info">
+                        <h3>Sofía Torres</h3>
+                        <p>Tutora de Matemáticas</p>
+                        <p class="quote">“Simplifico conceptos complejos para un aprendizaje efectivo.”</p>
+                        <div class="star-container">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star-half.svg" alt="Half Star">
+                            <img src="../public/assets/star-half.svg" alt="Half Star">
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <button>Ver Perfil</button>
+                    </div>
+                </div>
+                <div class="expert-card academicas">
+                    <div class="card-image">
+                        <img src="../public/assets/expert13.jpg" alt="Lucas Martínez">
+                    </div>
+                    <div class="card-info">
+                        <h3>Lucas Martínez</h3>
+                        <p>Profesor de Inglés</p>
+                        <p class="quote">“Fomento fluidez y confianza en la comunicación.”</p>
+                        <div class="star-container">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star.svg" alt="Star">
+                            <img src="../public/assets/star-half.svg" alt="Half Star">
+                            <img src="../public/assets/star-half.svg" alt="Half Star">
                         </div>
                     </div>
                     <div class="card-button">
@@ -198,4 +405,5 @@
         </div>
     </footer>
     <script src="../src/js/index.js"></script>
+    <script src="../src/js/experts.js"></script>
 </body></html>

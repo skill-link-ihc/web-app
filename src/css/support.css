@@ -1,4 +1,3 @@
-
 html, body {
     height: 100%;
     margin: 0;
@@ -33,21 +32,19 @@ h1, h2 {
     margin: 0 0 20px;
 }
 
-ul {
+/* Scoped list styles for support page content */
+.faq ul, .knowledge-base ul {
     list-style: none;
     padding: 0;
 }
-
-ul li {
+.faq ul li, .knowledge-base ul li {
     margin-bottom: 15px;
 }
-
-ul li a {
+.faq ul li a, .knowledge-base ul li a {
     text-decoration: none;
     color: #457B9D;
 }
-
-ul li a:hover {
+.faq ul li a:hover, .knowledge-base ul li a:hover {
     text-decoration: underline;
 }
 
@@ -125,6 +122,11 @@ ul li a:hover {
 
 .footer-nav a:hover {
     color: #a8dadc;
+}
+
+/* Override header nav link hover underline */
+.header-container .header-nav li a:hover {
+    text-decoration: none !important;
 }
 
 .footer-social {
