@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/chat-bot.css">
+    <script type="module" src="../src/js/Chat-bot.js"></script>
+    <script type="module" src="../src/js/index.js"></script>
+    <title>Skill-Link | Chat-bot</title>
+</head>
+<body>
+    <div class="contenedor-chat">
+        <header class="cabecera">
+            <button id="btn-back" class="btn-back" title="Volver" style="background:none;border:none;cursor:pointer;"><img src="../public/assets/boton-retroceso.png" alt="boton para retroceder"></button>
+            <img src="../public/assets/chat-bot.jpeg" alt="imagen del chat bot">
+            <div class="info-cabecera">
+                <span class="titulo">
+                    Skill Help
+                </span>
+                <span class="subtitulo">
+                    Tu asistente virtual de SkillLink
+                </span>
+            </div>
+        </header>
+        <main class="mensajes" id="cuerpoChat">
+            <div class="mensaje bot">
+                Hola, soy Skill Help, ¿en qué puedo ayudarte hoy?
+            </div>
+        </main>
+        <footer class="entrada">
+            <input type="text" placeholder = "Escribe tu mensaje" id= "inputMensaje">
+            <button id="botonEnviar" disabled>Enviar</button>
+        </footer>
+    </div>
+</body>
+</html>
