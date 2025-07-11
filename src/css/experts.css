@@ -99,9 +99,13 @@ body {
 }
 
 .experts-container {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #141e30, #243b55);
+    width: 100%;
+    padding: 0 clamp(1rem, 10vw, 15rem); /* responsive padding: min 1rem, ideal 10vw, max 15rem */
+    padding-bottom: 4rem;
+    box-sizing: border-box;
 }
 
 .experts-header {
@@ -111,28 +115,28 @@ body {
 
 .experts-header h1 {
     font-size: 2.5rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 0.5rem;
 }
 
 .experts-header p {
     font-size: 1.2rem;
-    color: #666;
+    color: #ffffff;
 }
 
 /* Grid layout for expert cards */
 .experts-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(3, 1fr); /* Exactly three columns */
     gap: 2rem;
     justify-content: center;
 }
 
 .expert-card {
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    overflow: hidden;   
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -141,9 +145,16 @@ body {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
+.card-image {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
 .card-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     display: block;
 }
 
@@ -204,8 +215,39 @@ body {
     background-color: #0056b3;
 }
 
+/* Category filter button styles */
+.experts-filters {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.experts-filters button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+.experts-filters button.active,
+.experts-filters button:hover {
+    background: #fff;
+    color: #243b55;
+}
+
 /* Responsive adjustments */
+@media (max-width: 1024px) {
+    .experts-grid {
+        grid-template-columns: repeat(2, 1fr); /* dos columnas */
+    }
+}
 @media (max-width: 768px) {
+    .experts-grid {
+        grid-template-columns: 1fr; /* una columna */
+    }
+
     .experts-header h1 {
         font-size: 2rem;
     }

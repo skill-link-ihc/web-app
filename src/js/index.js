@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const botonChatBot = document.getElementById('btn-live-chat')
     const Volver = document.getElementById('btn-back');
 
+<<<<<<< HEAD
     if (loginButton) {
         loginButton.addEventListener('click', () => {
             window.location.href = "../src/Login.html";
@@ -45,5 +46,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+=======
+    loginButton.addEventListener('click', () => {
+        window.location.href = "src/login.html"; // Correct relative path
+    });
+
+    registerButton.addEventListener('click', () => {
+        window.location.href = "src/register.html"; // Correct relative path
+    });
+});
+
+function Login() {
+    window.location.href = "src/login.html"; // Correct relative path
+}
+
+function Registrar() {
+    window.location.href = "src/register.html"; // Correct relative path
+}
+>>>>>>> 45be36ce655378334ed17d0ce58d38a7f47693cf
 
 

@@ -47,6 +47,7 @@
 
 .header-nav li a:hover {
     color: #3B4DBE;
+    text-decoration: none;
 }
 
 
@@ -213,6 +214,8 @@
     border-radius: 50%;
     height: 150px;
     width: 150px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .card-expert-info {
@@ -378,7 +381,6 @@
     width: 50%;
     color: #ffffff;
     background-color: #122136;
-    margin-left: 50px;
 }
 
 .detailed-row {
@@ -520,4 +522,123 @@
     height:100%;
     object-fit:cover;
     border-radius:inherit;
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-sign-up {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.image-sign-up {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin: 0 0 20px 0;
+}
+
+.image-sign-up img {
+    height: auto;
+    width: 80%;
+    border-radius: 6px;
+}
+
+.card-sign-up-content {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.card-description p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+.register-form .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.register-form .form-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #dadada;
+}
+.register-form .form-group input {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.register-form .form-group input:focus {
+    border-color: #3B4DBE;
+    box-shadow: 0 0 0 2px rgba(59,77,190,0.2);
+}
+.register-form .form-group.checkbox {
+    flex-direction: row;
+    align-items: center;
+}
+.register-form .form-group.checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    width: auto;
+}
+.register-button-form {
+    background-color: #3B4DBE;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.register-button-form:hover {
+    background-color: #2d3baa;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+    }
+    .image-sign-up,
+    .card-sign-up {
+        width: 100%;
+    }
+    .image-sign-up {
+        height: auto;
+    }
+    .image-sign-up img {
+        width: 100%;
+        height: auto;
+    }
 }
