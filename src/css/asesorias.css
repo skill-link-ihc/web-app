@@ -1,0 +1,710 @@
+.header-menu-icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    width: auto;
+    height: 60px;
+    display: block;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    background-color: #fff;
+    height: 70px;
+}
+
+/* Navbar */
+
+.header-nav ul {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav ul li {
+    list-style: none;
+}
+
+.header-nav li a {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.2s ease;
+}   
+
+.header-nav li a:hover {
+    color: #3B4DBE;
+}
+
+
+/* Login and Register */
+
+.header-login-register {
+    display: flex;
+    gap: 16px;
+}
+
+.login-button, .register-button {
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.15);
+    transition: transform 0.1s, box-shadow 0.1s;
+    cursor: pointer;
+    outline: none;
+}
+
+.login-button {
+    background-color: #1D3557;
+    color: #fff;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: #0f1b2c;
+}
+
+.register-button {
+    background: #fff;
+    color: #3B4DBE;
+    border: 2px solid #3B4DBE;
+}
+
+.login-button:active, .register-button:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 6px rgba(44, 62, 80, 0.10);
+}
+
+
+/*la parte de las Sectiones*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita scroll horizontal */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7fafd;
+}
+
+/* Hero Section */
+.frase-container {
+    background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 2rem 0 4rem 0; /* Sin padding horizontal para ocupar todo el ancho */
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column; /* Cambio a column para el título y carrusel */
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;         /* full width */
+}
+
+.frase-container h1 {
+    color: #fff;
+    font-size: 2.8rem;
+    width: 100%;      
+    text-align: center;
+    line-height: 1.3;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    font-weight: 500;
+    padding: 1rem 1rem 2rem 1rem; /* Agregamos padding inferior */
+    margin-bottom: 0; /* Eliminamos margen inferior */
+}
+
+/* Mission & Vision Sections */
+.mision-container,
+.vision-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+}
+
+.mision-container { background-color: #f0f4f8; }
+.vision-container { background-color: #ffffff; }
+.information-container {
+    flex: 1 1 300px;
+    max-width: 600px;
+    padding: 1rem;
+    color: #333;
+}
+.information-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1D3557;
+    text-align: center;
+}
+.information-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+.image {
+    flex: 1 1 300px;
+    max-width: 400px;
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Recommended Experts */
+.recommended-experts-container {
+    background: #f7fafd;
+    padding: 3rem 2rem;
+}
+.recommended-experts-container h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #1D3557;
+}
+.expert-card-container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.expert-card-container:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.card-expert-info-name {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 0.8rem;
+    color: #333;
+}
+.card-expert-info-profession {
+    display: block;
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 0.4rem;
+}
+.card-expert-info-quote {
+    display: block;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #888;
+    margin: 0.6rem 0;
+}
+.recommended-experts-container-cards {
+    display: grid;
+    /* grid with 3 columns by default */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px 0;
+    overflow: visible;
+}
+
+/* Layout de categorías y catálogo */
+.asesorias-content-wrapper {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 5rem; /* Added horizontal padding */
+    background-color: #f0f0f0;
+}
+.asesorias-categories {
+    width: 20%;
+}
+.asesorias-categories .category-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.asesorias-categories .category-list li {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid #e0e0e0;
+}
+.asesorias-categories .category-list li.active {
+    background-color: #f0f0f0;
+    font-weight: 600;
+}
+.asesorias-catalog {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mision-container, .vision-container {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+    .information-container h2 {
+        font-size: 2rem;
+    }
+    .frase-container h1 {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+}
+
+/* Responsive adjustments for Recommended Experts */
+@media (max-width: 768px) {
+    .recommended-experts-container-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .recommended-experts-container-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer */
+
+.footer-skilllink {
+    width: 100vw;
+    background: #1D3557;
+    color: #fff;
+    padding: 32px 0 16px 0;
+    font-size: 1rem;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    gap: 24px;
+    box-sizing: border-box;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.footer-logo img {
+    height: 40px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 32px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+    color: #a8dadc;
+}
+
+.footer-social {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social img {
+    height: 28px;
+    width: 28px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.2s;
+}
+
+.footer-social img:hover {
+    filter: brightness(0.8) invert(0.7) sepia(1) hue-rotate(180deg);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 1rem;
+    color: #a8dadc;
+}
+
+.icons {
+    text-align: center;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.icons a{
+    text-decoration: none;
+    color: rgb(240, 239, 239);
+    font-size: 25px;
+}
+
+
+/* Carousel Styles */
+.carousel-container {
+    position: relative; /* Posicionar botones absolutamente dentro */
+    padding: 0rem 0; /* Increased vertical padding for card shadows */
+    background: transparent;
+    overflow: hidden; /* Mantiene oculto overflow del contenido */
+    width: 100%;
+    max-width: 100%; /* Cambio: ocupar todo el ancho */
+}
+
+.carousel-wrapper {
+    position: relative;
+    box-sizing: border-box; /* Incluir padding en el ancho */
+    overflow: visible !important; /* Permite overflow para botones */
+    width: 100%;
+    margin: 0;
+    padding: 2rem 4rem; /* Added vertical padding to allow overflow shadows */
+}
+
+.carousel-content {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.3s ease;
+    padding: 0 1rem;
+}
+
+.carousel-btn {
+    position: sticky; /* Sticky within container */
+    top: 50%; /* Center vertically in viewport */
+    transform: translateY(-50%);
+    background: #3B4DBE;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(59, 77, 190, 0.3);
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+}
+
+.carousel-btn:hover {
+    background: #1D3557;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn-prev {
+    left: 15px !important; /* 15px from left edge of viewport */
+}
+
+.carousel-btn-next {
+    right: 15px !important; /* 15px from right edge of viewport */
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4); /* Más visible sobre fondo oscuro */
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
+}
+
+.indicator.active {
+    background: #fff; /* Blanco cuando está activo */
+    border-color: #fff;
+}
+
+/* Asesoria Cards */
+.asesoria-card {
+    flex: 0 0 320px; /* Incrementamos el ancho de las cards */
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1), 0 0 8px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    height: 450px; /* Reducimos un poco la altura */
+    display: flex;
+    flex-direction: column;
+}
+
+.asesoria-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15), 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.card-image {
+    width: 100%;
+    height: 160px; /* Reducimos altura de imagen para dar más espacio al contenido */
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.asesoria-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.asesoria-card-content {
+    padding: 1rem; /* Reducimos significativamente el padding */
+    margin: 0; /* Eliminamos cualquier margen */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.asesoria-card-content h3 {
+    font-size: 1.2rem; /* Reducimos un poco el tamaño */
+    font-weight: 600;
+    color: #1D3557;
+    margin: 0 0 0.4rem 0; /* Eliminamos margin-top */
+    line-height: 1.2;
+}
+
+.card-instructor {
+    font-size: 0.85rem; /* Reducimos tamaño */
+    color: #3B4DBE;
+    font-weight: 500;
+    margin: 0 0 0.6rem 0; /* Eliminamos margin-top */
+}
+
+.card-description {
+    font-size: 0.85rem; /* Reducimos tamaño */
+    color: #666;
+    line-height: 1.4;
+    margin: 0 0 0.8rem 0; /* Eliminamos margin-top */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limitamos a 3 líneas */
+    line-clamp: 3; /* Estándar para compatibilidad */
+    -webkit-box-orient: vertical;
+}
+
+.card-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 0.6rem 0; /* Eliminamos margin-top */
+}
+
+.stars {
+    display: flex;
+    gap: 0.2rem;
+    color: #ffc107;
+}
+
+.stars ion-icon {
+    font-size: 0.9rem; /* Reducimos tamaño de estrellas */
+}
+
+.rating-text {
+    font-size: 0.8rem; /* Reducimos tamaño */
+    color: #666;
+}
+
+.card-price {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 0.8rem 0; /* Eliminamos margin-top */
+}
+
+.price {
+    font-size: 1.2rem; /* Reducimos tamaño */
+    font-weight: 700;
+    color: #1D3557;
+}
+
+.old-price {
+    font-size: 0.9rem; /* Reducimos tamaño */
+    color: #999;
+    text-decoration: line-through;
+}
+
+.card-button {
+    width: 100%;
+    background: linear-gradient(135deg, #3B4DBE, #1D3557);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1rem; /* Reducimos padding */
+    font-size: 0.9rem; /* Reducimos tamaño */
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0; /* Eliminamos todos los márgenes */
+}
+
+.card-button:hover {
+    background: linear-gradient(135deg, #1D3557, #0f1b2c);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 77, 190, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .asesoria-card {
+        flex: 0 0 300px; /* Ajustamos ancho en tablets */
+        height: 430px; /* Ajustamos altura */
+    }
+    
+    .carousel-wrapper {
+        padding: 0 5.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-content {
+        gap: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    .asesoria-card {
+        flex: 0 0 280px; /* Más compactas en móvil */
+        height: 410px; /* Altura adecuada para móvil */
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .carousel-btn-prev {
+        left: 10px !important;
+    }
+    
+    .carousel-btn-next {
+        right: 10px !important;
+    }
+    
+    .carousel-wrapper {
+        padding: 0 2rem;
+    }
+    
+    .asesoria-card-content {
+        padding: 0.9rem; /* Reducimos padding en móvil */
+    }
+    
+    .asesoria-card-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .card-image {
+        height: 150px; /* Reducimos un poco en móvil */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-container {
+        padding: 1rem 0;
+    }
+    
+    .asesoria-card {
+        flex: 0 0 260px; /* Más pequeñas en pantallas muy pequeñas */
+        height: 390px; /* Altura mínima para que se vea todo */
+    }
+    
+    .carousel-btn-prev {
+        left: 5px !important;
+    }
+    
+    .carousel-btn-next {
+        right: 5px !important;
+    }
+    
+    .carousel-wrapper {
+        padding: 0 1.5rem;
+    }
+    
+    .card-image {
+        height: 130px;
+    }
+    
+    .asesoria-card-content {
+        padding: 0.8rem; /* Padding mínimo en móvil */
+    }
+    
+    .asesoria-card-content h3 {
+        font-size: 1rem;
+    }
+}
+
+.us-container h2{
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+/* Regla final para asegurar visibilidad de los botones del carousel */
+#nextBtn, #prevBtn {
+    display: flex !important;
+    position: absolute !important;
+    z-index: 9999 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+#nextBtn {
+    right: -25px !important; /* Mover hacia dentro para que quede visible */
+}
+
+#prevBtn {
+    left: 15px !important;
+}
+
+/* Eliminar overflow visible forzado en contenedores para restaurar comportamiento original */
+.carousel-container, .carousel-wrapper {
+    overflow: hidden !important;
+}
