@@ -38,8 +38,10 @@ ul {
     padding: 0;
 }
 
-ul li {
-    margin-bottom: 15px;
+.help{
+    color: #457B9D;
+    font-weight: lighter;
+    margin-bottom: 10px;
 }
 
 ul li a {
@@ -47,9 +49,7 @@ ul li a {
     color: #457B9D;
 }
 
-ul li a:hover {
-    text-decoration: underline;
-}
+
 
 .faq li {
     margin-bottom: 25px;
