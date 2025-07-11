@@ -190,7 +190,7 @@ function generarRespuestaSimulada(mensaje){
         return 'Claro, ¿en qué puedo ayudarte? Puedes preguntar sobre nuestras asesorías, asesores disponibles o cualquier otra duda que tengas.';
     }
     else{
-        return 'Lo siento, no entendí tu mensaje. ¿Podrías reformularlo o preguntar algo más específico?';
+        return 'Lo siento, aun estoy en entrenamiento.';
     };
 }
 
