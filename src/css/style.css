@@ -640,19 +640,52 @@
     background-color: #2d3baa;
 }
 
+.hamburger-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .form-container {
-        flex-direction: column;
-    }
-    .image-sign-up,
-    .card-sign-up {
-        width: 100%;
-    }
-    .image-sign-up {
-        height: auto;
-    }
-    .image-sign-up img {
-        width: 100%;
-        height: auto;
-    }
+  .hamburger-icon {
+    display: block;
+  }
+
+  .header-nav,
+  .header-login-register {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background-color: white;
+    padding: 1rem;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .header-nav.active,
+  .header-login-register.active {
+    display: flex;
+  }
+
+  .header-nav ul {
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header-login-register {
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .header-container {
+    position: relative;
+  }
 }

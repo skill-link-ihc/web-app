@@ -701,7 +701,7 @@ html, body {
     top: 50% !important;
     right: 15px !important;
     transform: translateY(-50%) !important;
-    z-index: 9999 !important; /* Mover hacia dentro para que quede visible */
+    z-index: 9999 !important; 
 }
 
 #prevBtn {
