@@ -96,3 +96,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+const menuToggle = document.getElementById('menu-toggle');
+  const navMenu = document.querySelector('.header-nav');
+  const loginRegister = document.querySelector('.header-login-register');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    loginRegister.classList.toggle('active');
+  });
