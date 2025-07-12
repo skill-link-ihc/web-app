@@ -697,7 +697,11 @@ html, body {
 }
 
 #nextBtn {
-    right: -25px !important; /* Mover hacia dentro para que quede visible */
+    position: absolute !important;
+    top: 50% !important;
+    right: 15px !important;
+    transform: translateY(-50%) !important;
+    z-index: 9999 !important; 
 }
 
 #prevBtn {
