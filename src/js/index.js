@@ -96,6 +96,58 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const registerForm = document.querySelector(".register-form");
+
+  registerForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirm-password").value;
+    const termsAccepted = document.getElementById("terms").checked;
+
+    if (!name || !email || !password || !confirmPassword) {
+      alert("Por favor, completa todos los campos.");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Por favor, ingresa un correo válido.");
+      return;
+    }
+
+    if (password !== confirmPassword) {
+      alert("Las contraseñas no coinciden.");
+      return;
+    }
+
+    if (password.length < 6) {
+      alert("La contraseña debe tener al menos 6 caracteres.");
+      return;
+    }
+
+    if (!termsAccepted) {
+      alert("Debes aceptar los términos y condiciones.");
+      return;
+    }
+
+    const usuarioSkillLink = {
+      nombre: name,
+      email: email,
+      contrasena: password
+    };
+
+    localStorage.setItem("usuarioSkillLink", JSON.stringify(usuarioSkillLink));
+
+    alert("¡Registro exitoso!");
+    window.location.href = "../index.html";
+  });
+});
+
+
 const menuToggle = document.getElementById('menu-toggle');
   const navMenu = document.querySelector('.header-nav');
   const loginRegister = document.querySelector('.header-login-register');
