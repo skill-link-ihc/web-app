@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil del Usuario | Skill Link</title>
+  <link rel="stylesheet" href="css/user-profile.css">
+  <script src="js/user-profile.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a href="../index.html" class="back">← Volver al inicio</a>
+  </header>
+
+  <main class="profile-container">
+    <section class="profile-header">
+      <img src="" alt="Foto del usuario" class="profile-image">
+      <div class="profile-info">
+        <h1></h1>
+        <h2></h2>
+        <p></p>
+      </div>
+    </section>
+
+    <section class="profile-details">
+     <div class="profile-column">
+      <h3>¿Por qué se unió a Skill Link?</h3>
+      <ul class="reasons-list"></ul>
+     </div>
+     <div class="profile-column">
+     <h3>¿Qué logró gracias a la plataforma?</h3>
+     <ul class="benefits-list"></ul>
+
+    <!-- SECCIÓN de feedback INSERTADA aquí -->
+     <div class="opinion-feedback">
+      <p>¿Te resultó útil esta opinión?</p>
+      <div class="feedback-buttons">
+        <button id="like-btn" aria-label="Me gustó" title="Me gustó">👍</button>
+        <button id="dislike-btn" aria-label="No me gustó" title="No me gustó">👎</button>
+      </div>
+      <p id="feedback-msg"></p>
+      </div>
+     </div>
+    </section>
+
+    <section class="recommended-advisors">
+      <h3>Asesores recomendados</h3>
+      <ul class="recommended-list"></ul>
+    </section>
+  </main>
+  <section class="opinion-feedback">
+   <p>¿Te resultó útil esta opinión?</p>
+   <div class="feedback-buttons">
+    <button id="like-btn" aria-label="Me gustó" title="Me gustó">
+      👍
+    </button>
+    <button id="dislike-btn" aria-label="No me gustó" title="No me gustó">
+      👎
+    </button>
+   </div>
+  <p id="feedback-msg"></p>
+  </section>
+</body>
+</html>
