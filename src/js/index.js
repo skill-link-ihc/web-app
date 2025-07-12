@@ -50,6 +50,49 @@ document.addEventListener('DOMContentLoaded', () => {
             window.history.back();
         });
     }
+
+    // Hamburger menu functionality
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const loginButtonMobile = document.getElementById('open-login-modal-mobile');
+    const registerButtonMobile = document.getElementById('open-register-modal-mobile');
+
+    if (hamburgerMenu && mobileMenu) {
+        hamburgerMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    }
+
+    // Add event listeners for mobile login/register buttons
+    if (loginButtonMobile) {
+        loginButtonMobile.addEventListener('click', () => {
+            window.location.href = loginPath;
+        });
+    }
+
+    if (registerButtonMobile) {
+        registerButtonMobile.addEventListener('click', () => {
+            window.location.href = registerPath;
+        });
+    }
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (hamburgerMenu && mobileMenu) {
+            if (!e.target.closest('.header-container')) {
+                mobileMenu.classList.remove('active');
+            }
+        }
+    });
+
+    // Close mobile menu when window is resized to desktop
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            if (mobileMenu) {
+                mobileMenu.classList.remove('active');
+            }
+        }
+    });
 });
 
 
