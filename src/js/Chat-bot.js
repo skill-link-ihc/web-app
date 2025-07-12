@@ -4,7 +4,7 @@ const cuerpo = document.getElementById('cuerpoChat');
 
 const asesorias = {
     "Marketing Digital": {
-        descripcion: "Asesoría en Marketing Digital: Resuelve tus dudas de álgebra, cálculo, geometría y más.",
+        descripcion: "Asesoría en Marketing Digital: Aprende a crear estrategias efectivas de marketing en redes sociales, SEO y publicidad online.",
         calificacion: '4,9/5',
     },
     "Desarrollo de Startups": {
